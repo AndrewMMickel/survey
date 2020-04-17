@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculator</title>
+    <title>Survey-results</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/JQuery-3.4.1.js"></script>
@@ -12,20 +12,32 @@
       <h1>Please answer the following questions</h1>
       <form id="add">
         <div class="form-group">
-          <label for="add1">1st number:</label>
-          <input id="add1" class="form-control" type="text">
+          <label for="name">Your name</label>
+          <input id="name" class="form-control" type="text">
         </div>
+        
         <div class="form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text">
+          <label for="food">What's your favorite food?</label>
+          <input id="food" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Add!</button>
+
+        <div class="form-group">
+          <label for="music">What's your favorite music?</label>
+          <input id="music" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="pet">Name of your first pet?</label>
+          <input id="pet" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">submit!</button>
       </form>
-      <div id="output-add">
 
+      <div id="submission">
+        <h1>Thank you for your submission <span class="name"></span>!</h1>
+        <p>You have submitted that <span class="food"></span> is your favorite food, <span class="music"></span> is your favorite thing to listen to, and that <span class="pet"></span> was your first pet! Thank you for taking this time to fill this out!</p>
       </div>
 
-      </div>
     </div>
   </body>
 </html>
